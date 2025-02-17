@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <!-- Google Poppins Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1E1E1E;
+            color: #FFFFFF;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .header img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .header h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        /* Product Sections */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .section {
+            border: 2px solid #FFFFFF;
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .section h2 {
+            font-size: 1.2rem;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #FFFFFF;
+            color: #000000;
+            border-radius: 8px;
+            padding: 10px;
+            text-decoration: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .card span {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .card img {
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
+            background-color: #D3D3D3;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <img src="./shopee_logo.png" alt="Shopee Logo">
+            <h1>Products</h1>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="product-grid">
+            <!-- Good Section -->
+            <div class="section">
+                <h2>Good / I’m using</h2>
+                <a href="https://shopee.vn/Chu%E1%BB%99t-m%C3%A1y-t%C3%ADnh-ch%C6%A1i-game-Sidotech-Inphic-PB1-b%E1%BA%A3n-c%C3%B3-d%C3%A2y-DPI-3600-thi%E1%BA%BFt-k%E1%BA%BF-c%C3%B4ng-th%C3%A1i-h%E1%BB%8Dc-ph%C3%B9-h%E1%BB%A3p-c%E1%BA%A3-gaming-v%C3%A0-l%C3%A0m-vi%E1%BB%87c-i.268182642.9624203250?sp_atk=e58374fb-527b-456e-98f3-a800ad131621" target="_blank" class="card">
+                    <span>inphic B1 (8800 dpi + Side buttons)</span>
+                    <img src="./products/inphic_b1.jpg" alt="Placeholder">
+                </a>
+            </div>
+
+            <!-- Mid Section -->
+            <div class="section">
+                <h2>Mid</h2>
+                <a href="https://shopee.vn/B%C3%A0n-ph%C3%ADm-gi%E1%BA%A3-c%C6%A1-5TECH-k%C3%A8m-chu%E1%BB%99t-c%C3%B3-%C4%91i%E1%BB%81u-ch%E1%BB%89nh-%C4%91%E1%BB%99-nh%E1%BA%A1y-DPI-ch%E1%BA%BF-%C4%91%E1%BB%99-LED-7-m%C3%A0u-d%C3%A0nh-cho-m%C3%A1y-t%C3%ADnh-i.93922606.1546899006?sp_atk=0e66c28e-3da0-420e-a849-1be4cc86a085&xptdk=0e66c28e-3da0-420e-a849-1be4cc86a085" target="_blank" class="card">
+                    <span>5Tech keyboard (no mechanical)</span>
+                    <img src="./products/5tech_keyboard.png" alt="Placeholder">
+                </a>
+            </div>
+
+            <!-- Bad Section -->
+            <div class="section">
+                <h2>Bad asf</h2>
+                <a href="https://example.com" target="_blank" class="card">
+                    <span>Example</span>
+                    <img src="./products/5tech_keyboard.png" alt="Placeholder">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
