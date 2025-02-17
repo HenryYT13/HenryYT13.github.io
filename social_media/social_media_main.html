@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Figma Prototypes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #1E1E1E;
+    }
+
+    .header {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #565656;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .header img {
+      width: 50px;
+    }
+
+    .container {
+      margin-top: 20px;
+      width: 90%;
+      max-width: 600px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .prototype {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      transition: transform 0.2s ease-in-out;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .prototype:hover {
+      transform: scale(1.05);
+      background-color: #f0f0f0;
+    }
+
+    .prototype-title {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .prototype-img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <img src="./social_media_main.png" alt="Social media logo">
+  </div>
+
+  <!-- Container -->
+  <div class="container">
+    <a href="https://example.com/proto1" class="prototype" target="_blank">
+      <div class="prototype-title">Proto 1</div>
+      <div class="prototype-img"></div>
+    </a>
+    <a href="https://google.com" class="prototype" target="_blank">
+      <div class="prototype-title">Proto 2</div>
+      <div class="prototype-img"></div>
+    </a>
+  </div>
+</body>
+</html>
